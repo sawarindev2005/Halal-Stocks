@@ -1,0 +1,95 @@
+@import 'tailwindcss';
+
+/* Dark mode follows the `.dark` class on <html> (set by useTheme / the inline script in index.html). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens.
+ * Lapis (brand) and gilt come from the pigments of Islamic manuscript illumination; the neutral
+ * scale replaces Tailwind's slate with a cool, lapis-tinted ink so every existing `slate-*`
+ * class picks up the palette. Gilt is used sparingly: the Shariah mark and the star band.
+ */
+@theme {
+  --font-sans: 'Anuphan', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Bai Jamjuree', 'Anuphan', ui-sans-serif, sans-serif;
+
+  --color-slate-50: #f4f6fa; /* paper */
+  --color-slate-100: #e8ecf3;
+  --color-slate-200: #d6dce7;
+  --color-slate-300: #b9c2d3;
+  --color-slate-400: #8a95ad;
+  --color-slate-500: #626e89;
+  --color-slate-600: #4a556f;
+  --color-slate-700: #374059;
+  --color-slate-800: #232b42;
+  --color-slate-900: #161c30; /* ink */
+  --color-slate-950: #0c1122; /* night */
+
+  /* Brand accent: lapis */
+  --color-brand-50: #eef2fc;
+  --color-brand-100: #dce4f8;
+  --color-brand-400: #8aa2ee;
+  --color-brand-500: #6383e6;
+  --color-brand-600: #3453bc;
+  --color-brand-700: #24408e;
+
+  /* Gilt: the Shariah mark only */
+  --color-gilt-300: #dcc27f;
+  --color-gilt-500: #b08a3e;
+  --color-gilt-700: #7d5f22;
+
+  /* Price direction — kept separate from the brand so "up" is never confused with branding */
+  --color-up: #16a34a;
+  --color-up-soft: #dcfce7;
+  --color-down: #dc2626;
+  --color-down-soft: #fee2e2;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  }
+  h1,
+  h2 {
+    font-family: var(--font-display);
+  }
+  :focus-visible {
+    outline-color: var(--color-brand-500);
+  }
+}
+
+@layer utilities {
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /*
+   * Band of eight-pointed stars (khatam) — the one decorative device in the app.
+   * Drawn as a repeating SVG (gilt lines on lapis) so it stays crisp at any width.
+   */
+  .star-band {
+    background-color: var(--color-brand-700);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' stroke='%23dcc27f' stroke-width='1.1'%3E%3Crect x='6.5' y='6.5' width='11' height='11'/%3E%3Crect x='6.5' y='6.5' width='11' height='11' transform='rotate(45 12 12)'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 24px 24px;
+    background-position: center;
+  }
+  .dark .star-band {
+    background-color: var(--color-brand-700);
+    opacity: 0.85;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

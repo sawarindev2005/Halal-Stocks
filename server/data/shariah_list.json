@@ -1,0 +1,285 @@
+{
+  "_notice": "US entries: from https://dime.co.th/th/articles/halal-etf-list (published 2025-02-21, data as of 2025-02-10; Dime cites Zoya, Musaffa and fund websites). ETFs = the 16 funds Dime lists as halal. Stocks = top holdings Dime lists for the 7 Shariah-index ETFs (SPUS, HLAL, SPSK, SPRE, SPTE, SPWO, UMMA); holdings of the 9 sector ETFs were left out because they are not screened individually. Skipped: Goodman Group, Meituan, Infineon (not US-listed) and AvalonBay/AVB (merged into Vivmark Residential, VMRK, in Aug 2026 - no longer trades; VMRK was not screened by this source). Thai (.BK) entries are still SAMPLE DATA. Holdings change over time - re-check before relying on this list.",
+  "stocks": [
+    {
+      "symbol": "ADVANC.BK",
+      "name": "Advanced Info Service",
+      "market": "TH",
+      "sector": "Telecommunications",
+      "screenedBy": "SAMPLE DATA - replace",
+      "updatedAt": "2026-01-01"
+    },
+    {
+      "symbol": "PTTEP.BK",
+      "name": "PTT Exploration and Production",
+      "market": "TH",
+      "sector": "Energy",
+      "screenedBy": "SAMPLE DATA - replace",
+      "updatedAt": "2026-01-01"
+    },
+    {
+      "symbol": "CPALL.BK",
+      "name": "CP All",
+      "market": "TH",
+      "sector": "Consumer Staples",
+      "screenedBy": "SAMPLE DATA - replace",
+      "updatedAt": "2026-01-01"
+    },
+    {
+      "symbol": "DELTA.BK",
+      "name": "Delta Electronics (Thailand)",
+      "market": "TH",
+      "sector": "Technology",
+      "screenedBy": "SAMPLE DATA - replace",
+      "updatedAt": "2026-01-01"
+    },
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPUS, HLAL, SPTE",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPUS, SPTE",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPUS, HLAL, SPTE",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com Inc.",
+      "market": "US",
+      "sector": "Consumer Discretionary",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPUS",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "META",
+      "name": "Meta Platforms Inc.",
+      "market": "US",
+      "sector": "Communication Services",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPUS, HLAL",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "market": "US",
+      "sector": "Communication Services",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย HLAL",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla Inc.",
+      "market": "US",
+      "sector": "Consumer Discretionary",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย HLAL",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "PLD",
+      "name": "Prologis Inc.",
+      "market": "US",
+      "sector": "Real Estate",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPRE",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "EQIX",
+      "name": "Equinix Inc.",
+      "market": "US",
+      "sector": "Real Estate",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPRE",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "CPT",
+      "name": "Camden Property Trust",
+      "market": "US",
+      "sector": "Real Estate",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPRE",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPTE, SPWO, UMMA",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SAP",
+      "name": "SAP SE",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPTE, SPWO",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "ASML",
+      "name": "ASML Holding N.V.",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPWO, UMMA",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "NVO",
+      "name": "Novo Nordisk A/S",
+      "market": "US",
+      "sector": "Healthcare",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย SPWO, UMMA",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SHOP",
+      "name": "Shopify Inc.",
+      "market": "US",
+      "sector": "Technology",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ถือโดย UMMA",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SPUS",
+      "name": "SP Funds S&P 500 Sharia Industry Exclusions ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "HLAL",
+      "name": "Wahed FTSE USA Shariah ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SPSK",
+      "name": "SP Funds Dow Jones Global Sukuk ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SPRE",
+      "name": "SP Funds S&P Global REIT Sharia ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SPTE",
+      "name": "SP Funds S&P Global Technology ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SPWO",
+      "name": "SP Funds S&P World ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "UMMA",
+      "name": "Wahed Dow Jones Islamic World ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ติดตามดัชนีชาริอะห์",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "XLE",
+      "name": "Energy Select Sector SPDR Fund",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SMH",
+      "name": "VanEck Semiconductor ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "PAVE",
+      "name": "Global X U.S. Infrastructure Development ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "PHO",
+      "name": "Invesco Water Resources ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "BUG",
+      "name": "Global X Cybersecurity ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "BBH",
+      "name": "VanEck Biotech ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "XHE",
+      "name": "SPDR S&P Health Care Equipment ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "SNSR",
+      "name": "Global X Internet of Things ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    },
+    {
+      "symbol": "PKB",
+      "name": "Invesco Building & Construction ETF",
+      "market": "US",
+      "sector": "ETF",
+      "screenedBy": "Dime: ETF ฮาลาล (Zoya/Musaffa) — ETF รายอุตสาหกรรม",
+      "updatedAt": "2025-02-10"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+# รันทั้งระบบด้วยคำสั่งเดียว:  docker compose up -d --build
+# แล้วเปิด http://localhost:8080
+#
+# ค่าทั้งหมด (รหัสผ่าน, API key, webhook) อ่านจากไฟล์ .env ที่ root ของโปรเจกต์ — ดู .env.example
+
+services:
+  # ฐานข้อมูล: เก็บกฎแจ้งเตือนและประวัติข่าวที่ส่งแล้ว
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-shariah_watch}
+      MYSQL_USER: ${MYSQL_USER:-shariah}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?ตั้ง MYSQL_PASSWORD ในไฟล์ .env ก่อน}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?ตั้ง MYSQL_ROOT_PASSWORD ในไฟล์ .env ก่อน}
+      TZ: Asia/Bangkok
+    command: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+    volumes:
+      - mysql-data:/var/lib/mysql # ข้อมูลอยู่รอดแม้ลบ container
+    healthcheck:
+      test: ['CMD-SHELL', 'mysqladmin ping -h 127.0.0.1 -uroot -p"$$MYSQL_ROOT_PASSWORD" --silent']
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  # API + ระบบแจ้งเตือนราคา (ทุก 5 นาที) + สรุปข่าว (ทุกวัน 07:00 เวลาไทย)
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      PORT: 4000
+      DATABASE_URL: mysql://${MYSQL_USER:-shariah}:${MYSQL_PASSWORD}@mysql:3306/${MYSQL_DATABASE:-shariah_watch}
+      # ลิงก์ในข้อความ Discord ชี้มาที่หน้าเว็บนี้
+      CLIENT_ORIGIN: ${PUBLIC_URL:-http://localhost:8080}
+      TZ: Asia/Bangkok
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # หน้าเว็บ (nginx) — ส่งต่อ /api ไปที่ server
+  web:
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    restart: unless-stopped
+    ports:
+      - '${WEB_PORT:-8080}:80'
+    depends_on:
+      - server
+
+volumes:
+  mysql-data:
